@@ -24,15 +24,22 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
-header li {
-    display: inline-block;
-    margin-left: 25px;
-    margin-right: 20px;
+
+header nav {
     padding-top: 15px;
+    margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+}
+
+header ul {
     list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 25px;
 }
 
 a {
