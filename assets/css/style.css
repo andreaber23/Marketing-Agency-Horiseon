@@ -7,7 +7,7 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* remove class selector*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,30 +15,29 @@ header {
     color: #ffffff;
 }
 
+/* remove class selector*/
 header h1 {
-    display: inline-block;
     font-size: 48px;
+    display: inline-block;
 }
 
+/* remove class selector*/
 header h1 .seo {
     color: #d9dcd6;
 }
 
-
+/* remove class selector and replace with semantic element*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 20px;   
 }
-
-header ul {
-    list-style-type: none;
-}
-
+/* Remove class selector and replace with semantic element. <ul> and <ul li> are combined; they have the same properties and are inside <ul> element  */
 header ul li {
-    display: inline-block;
+    list-style-type: none;
+    display: inline;
     margin-left: 25px;
 }
 
@@ -87,55 +86,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* benefit cost, brand, and lead have the same properties. Combine and change the attribute to "benefit" in html and add the new attribute next to the class name*/
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* <h3> has the same CSS properties in all class attributes "benefit". Group them into one to condense CSS */
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+/* <img> under the three "benefit" class attributes have the same properties. Group them into one to condense CSS.*/
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* changhe the class atribute to Marketing. All properties are the same, so group them into one*/
+.marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,52 +114,18 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* ____________________________________________*/
+.marketing img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* ____________________________________________*/
+.marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* remove class selector*/
 footer {
     padding: 30px;
     clear: both;
@@ -196,6 +133,7 @@ footer {
     text-align: center;
 }
 
+/* remove class selector*/
 footer h2 {
     font-size: 20px;
 }
