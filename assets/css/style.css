@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0;  
+      
 }
 
 body {
@@ -32,12 +33,12 @@ header nav {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;   
+    font-size: 20px;
 }
-/* Remove class selector and replace with semantic element. <ul> and <ul li> are combined; they have the same properties and are inside <ul> element  */
-header ul li {
+/* Remove class selector and replace with semantic element. <ul> and <ul li> are combined; they have the same properties */
+header nav ul li {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     margin-left: 25px;
 }
 
@@ -74,8 +75,8 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
-.benefits {
+/* remove class selector and replace with semantic element*/
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -84,28 +85,29 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+
 }
 
-/* benefit cost, brand, and lead have the same properties. Combine and change the attribute to "benefit" in html and add the new attribute next to the class name*/
+/* cost, brand, and lead have the same properties. Combine and add the new attribute to the class*/
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* <h3> has the same CSS properties in all class attributes "benefit". Group them into one to condense CSS */
+/* <h3> has the same CSS properties in all class attributes "benefit". Group them into and replace with the correct attribute */
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-/* <img> under the three "benefit" class attributes have the same properties. Group them into one to condense CSS.*/
 
+/* All 3 <img> have the same properties. Group them into one and change the attribute name next to the class.*/
 .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* changhe the class atribute to Marketing. All properties are the same, so group them into one*/
+/* change the class atribute to the new one. All properties are the same, so group them into one*/
 .marketing {
     margin-bottom: 20px;
     padding: 50px;
@@ -114,12 +116,12 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-/* ____________________________________________*/
+/* change the class atribute to the new one. All properties in <img>are the same, so group them into one*/
 .marketing img {
     max-height: 200px;
 }
 
-/* ____________________________________________*/
+/* change the class atribute to the new one. All properties in <img>are the same, so group them into one*/
 .marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
