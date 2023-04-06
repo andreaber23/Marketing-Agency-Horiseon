@@ -13,7 +13,7 @@ N/A
 Open html in your preferred browser.This webpage was modified with semantic tags and alt attributes for search engine optimization.  All links direct you to the right part of the webpage and work properly. At the top right, there is three different links. Also, each image has descriptive text that can be use for people with disabilities.
 
 
-## Credits
+## Contributing
 Andreaber23 worked on code already provided on this project. 
 
 ## License
